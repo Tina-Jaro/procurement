@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/aboutUs.css">
+    <title>AboutUs</title>
+</head>
+<body>
+     <!-- navbar -->
+     <div class="navigation">
+        <div class="innerNav">
+           <a href="../html/index.html"><img src="../assets/ProcureXpress-Logo.png" alt=""  class="indexNavigationLogo nav-logo"></a> 
+           
+            <!-- <img src="./assets/ProcureXpress-Logo.png" alt="" class="indexNavigationLogo nav-logo"> -->
+            <div class="indexnavigationItemsDiv">
+                <a href="#" class="indexnavigationitem ">About</a>
+                <a href="#features" class="indexnavigationitem">Features</a>
+                <a href="#" class="indexnavigationitem">Blog</a>
+                <a href="#" class="indexnavigationitem">Contact</a>
+
+            </div>
+            <a href="../html/login.html" class="joinUs">Join us</a>
+        </div>
+    </div>
+
+    <!-- about us -->
+    <div class="feedbackDiv">
+
+        <div class="aboutUs">
+            <div class="line"></div>
+            <h4 class="about">
+                ABOUT PROCUREXPRESS</h4>
+            <p class="feedbackcustomerwords">
+                Our E-Procurement System is an enterprise ready solution that brings vendors ease to.<br>
+                It streamlines procurement management processes so that a vendors can achieve cost <br>
+                savings while saving valuable time when they are purchasing goods and services or <br>
+                even looking for the right information to get their work done. Optimized with features <br>
+                and elements that help you use the software more effectively.</p>
+
+                <p class="feedbackcustomerword">
+                    These includes: Automated Purchasing, Simple Sourcing and Spend Analytics — 
+                    in One <br> Easy-to-Use Platform. Premium Support for All Plans. 
+                    Custom Approval Workflows. Easily <br>
+                    Track PO’s. Real-Time Reports. 
+                </p>
+                
+        </div>
+        
+        <div class=" feedbackAssetDiv">
+            <img src="../assets/happy-client.png" class="feedbackAssetDivImg" id="imageAsset">
+            <iframe width="100%" height="100%" style="border-radius: 10px;" src="https://www.youtube.com/embed/-GRq1xjO3eI?autoplay=1"
+                title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write;
+             encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div id="playButton" onclick="playVideo()">
+                <img src="../assets/play.png" class="play">
+                <img src="../assets/playbtn.png" class="playbtn">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="solutions">
+    </div>
+
+    <script>
+        function playVideo() {
+            var playBtn = document.getElementById("playButton");
+            var assetImage = document.getElementById("imageAsset")
+            if (playBtn.style.display === "none") {
+                playBtn.style.display = "block";
+                assetImage.style.display = "block";
+            } else {
+                playBtn.style.display = "none";
+                assetImage.style.display = "none";
+            }
+        }
+    </script>
+
+
+    <!-- features -->
+    <div class="blogDiv" id="features">
+        <div class="blogContent">
+
+            <div class="blogOffer">
+                <div class="blogLine">
+                    <div class="line"></div>
+                    <h1>OUR FEATURES</h1>
+                </div>
+                <div class="blogcont">
+                    <div class="blogContainer">
+                        <div class="blogTopic">
+                            <div class="bgimg">
+                                <img src="../assets/MarketSquare.png" class="blogImg">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="featureText">MANAGE VENDER APPROVAL</h3>
+                            <p class="blogText">This module allows an administrator with the
+                                 required privileges to approve a vendor, 
+                                view all listed vendor and either approve or disapprove a vendor.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="blogContainer">
+                        <div class="blogTopic">
+                            <div class="bgimg">
+                                <img src="../assets/Alarm.png" class="blogImg">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="featureText">SEND BULK NOTIFICATION </h3>
+                            <p class="blogText">This module provides the administrative user with 
+                                the ability to send bulk notification to a
+                                 group of vendors based on their Job category either via SMS or Email.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="blogContainer">
+                        <div class="blogTopic">
+                            <div class="bgimg">
+                                <img src="../assets/Procurement.png" class="blogImg">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="featureText">MANAGE PROCUREMENT</h3>
+                            <p class="blogText">This module provides the administrator 
+                                with all features required to manage the end to end process
+                                 of e-procurement from job listing to job completion review and rating.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="blogContainer">
+                        <div class="blogTopic">
+                            <div class="bgimg">
+                                <img src="../assets/AdminSettingsMale.png" class="blogImg">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="featureText">MANAGE SYSTEM / USER ADMIN’s</h3>
+                            <p class="blogText">This module allows an administrator with the
+                                 required privileges to approve a vendor, 
+                                view all listed vendor and either approve or disapprove a vendor.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="blogContainer">
+                        <div class="blogTopic">
+                            <div class="bgimg">
+                                <img src="../assets/View.png" class="blogImg">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="featureText">VIEW REPORTS</h3>
+                            <p class="blogText">Provides a system administrator with the 
+                                functionality to create a new administrator. 
+                                New users details are 
+                                inputted in the form provided on the user creation interface.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="blogContainer">
+                        <div class="blogTopic">
+                            <div class="bgimg">
+                                <img src="../assets/Settings.png" class="blogImg">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="featureText">MAKE CHANGES TO SYSTEM SETTINGS</h3>
+                            <p class="blogText">This module provides the administrator with the 
+                                tool required to define critical logic and 
+                                default values upon which other layers of the solution can built.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+      <!-- footer -->
+      <div class="footer" id="contact">
+        <div class="contactUs">
+            <h1 class="contact">Contact Us</h1>
+        </div>
+        <div class="locations">
+            <div class="lagos">
+                <h1 class="lagosOffice">Lagos Office</h1>
+                <p class="add1">Plot 1187, Abimbola Awoniyi Close,<br />
+                    off Kasumu Ekemode Str, Via Saka <br />
+                    Tinubu Street, Victoria island, <br /> Nigeria.
+                </p>
+                <div class="tee">
+                    <p class="telephone">T: 234-1-9049320, 234-1-2710670-2</p>
+                    <p>E: info@vatebra.com</p>
+                    <p>E: customersupport@vatebra.com</p>
+                </div>
+            </div>
+            <div class="abuja">
+                <h1 class="abujaOffice">Abuja Office</h1>
+                <p class="add2">Suite 302 Fortune Place, <br />
+                    No 9 Nairobi Street, off <br />
+                    Aminu Kano Cresent, <br />
+                    Wuse 2, Abuja, Nigeria.
+                </p>
+                <div class="tee1">
+                    <p>T: 234-1-9049320, 234-1-2710670-2</p>
+                    <p>E: abujaoffice@vatebra.com</p>
+                </div>
+            </div>
+            <div class="nairobi">
+                <h1 class="nairobiOffice">Nairobi Office</h1>
+                <p class="add3">AG02, Madonna House,
+                    <br /> Westlands Road, Nairobi, <br /> Kenya
+                </p>
+                <p class="tee2">E: nairobioffice@vatebra.com</p>
+            </div>
+            <div class="ghana">
+                <h1 class="ghanaOffice">Accra Office</h1>
+                <p class="add5">202, Westland Boulevard,
+                    <br /> west Legon, Accra, Ghana,
+                    <br /> PO Box AN 5208 Accra- <br />
+                    North, Accra Ghana.
+                </p>
+                <div class="tee5">
+                    <p>T: 233(0) 302402339</p>
+                    <p>E: ghanaoffice@vatebra.com</p>
+                </div>
+
+            </div>
+
+            <div class="sierraLeone">
+                <h1 class="sierraLeoneOffice">Sierra Leone Office</h1>
+                <div class="tee4">
+                    <p>55A Wilkinson Road, Freetown, Sierra Leone</p>
+                    <p>T: +2349062547274</p>
+                    <p>E: info@vatebra.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="copy">
+                <img src="../assets/copyright.png">
+                <p class="copyrightText">Copyright 2022 by Vatebra.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

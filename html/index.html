@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "../css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="./fonts/DaxlinePro-Bold.otf">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>ProcureXpress</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navigation" id="topNav">
+        <div class="innerNav">
+            <div class="logoContainer">
+                <img src="../assets/ProcureXpress-Logo.png" alt="" class="indexNavigationLogo nav-logo">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            
+            <div class="indexnavigationItemsDiv">
+                <a href="../html/aboutUs.html" class="indexnavigationitem ">About</a>
+                <a href="#features" class="indexnavigationitem">Features</a>
+                <a href="#blog" class="indexnavigationitem">Blog</a>
+                <a href="#contact" class="indexnavigationitem">Contact</a>
+
+            </div>
+            <a href="" class="joinUs">Join us</a>          
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("topNav");
+            if (x.className === "navigation"){
+                x.className += " responsive ";
+            } else{
+                x.className = "navigation";
+            }
+        }
+    </script>
+
+
+    <!-- hero -->
+    <div class="heroeSection">
+        <div class="overlay">
+            <div class="heroTextDiv">
+                <h2 class="manageApproval">Automate and simplify your entire organizational<br> procurement process</h2>
+                <br>
+                <h3 class="digital">Collect more bids in less time with Digital Request for Quotations.</h3>
+                <h4 class="manageMemos">Our eProcurement software delivers a consumer-style, user-centric<br>
+                    experience. Get a bird-eye view into your spend with a single, easy-to-<br>
+                    use platform
+                </h4>
+                <a href="../html/aboutUs.html" class="freeTrialButton">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div class="solutions">
+        <div class="soluTextDiv">
+            <h4 class="solutionSupp">Our Soutions Supports Comprehensive reports for all<br>
+                actions and measurable processes carried out</h4><br>
+            <a href="" class="requestDemo">Request Demo</a>
+        </div>
+    </div>
+
+    <!-- about us -->
+    <div class="feedbackDiv">
+
+        <div class="aboutUs">
+            <div class="line"></div>
+            <h4 class="about">
+                ABOUT PROCUREXPRESS</h4>
+            <p class="feedbackcustomerwords">
+                Our E-Procurement System is an enterprise ready solution that brings vendors ease to.<br>
+                It streamlines procurement management processes so that a vendors can achieve cost <br>
+                savings while saving valuable time when they are purchasing goods and services or <br>
+                even looking for the right information to get their work done. Optimized with features <br>
+                and elements that help you use the software more effectively.</p>
+            <a href="../html/aboutUs.html" class="learnMore">Learn More</a>
+        </div>
+        <div class=" feedbackAssetDiv">
+            <img src="../assets/happy-client.png" class="feedbackAssetDivImg" id="imageAsset">
+            <iframe id="introvideo" width="100%" height="100%" style="border-radius: 10px;" src="https://www.youtube.com/embed/-GRq1xjO3eI"
+                title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write;
+             encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div id="playButton" onclick="playVideo()">
+                <img src="../assets/play.png" class="play">
+                <img src="../assets/playbtn.png" class="playbtn">
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function playVideo() {
+            var playBtn = document.getElementById("playButton");
+            var assetImage = document.getElementById("imageAsset");
+            var vid = document.getElementById("introvideo");
+            if (playBtn.style.display === "none") {
+                playBtn.style.display = "block";
+                assetImage.style.display = "block";
+                vid.pause();
+            } else {
+                playBtn.style.display = "none";
+                assetImage.style.display = "none";
+                vid.play();
+            }
+        }
+    </script>
+    <!-- what we offer -->
+    <div class="offerDiv" id="features">
+        <div class="offerAssetDiv">
+            <img src="../assets/offer.png" class="offerDivImg" />
+        </div>
+        <div class="offerContent">
+            <div class="line"></div>
+            <div class="whatWeOffer">
+                <h1>WHAT WE OFFER</h1>
+                <div class="container">
+                    <div class="topicContainer">
+                        <div class="topic">
+                            <div>
+                                <img src="../assets/bank.png" class="topicImg">
+                            </div>
+                            <h3 class="head">COST SAVING</h3>
+                        </div>
+                        <div>
+                            <p class="topicText">Change your way of
+                                purchasing with our powerful
+                                e-sourcing platform to reduce
+                                your costs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="topicContainer">
+                        <div class="topic">
+                            <div>
+                                <img src="../assets/ToDo.png" class="topicImg">
+                            </div>
+                            <h3 class="head">EFFICIENCY</h3>
+
+                        </div>
+                        <div>
+                            <p class="topicText">Improve your purchasing process efficiency
+                                with our customizable purchasing functionalities.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="topicContainer">
+                        <div class="topic">
+                            <div>
+                                <img src="../assets/transparency.png" class="topicImg">
+                            </div>
+                            <h3 class="head">TRANSPARENCY</h3>
+
+                        </div>
+                        <div>
+                            <p class="topicText">Empower your suppliers and vendors to compete
+                                for jobs in a fair and trusted environment.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="topicContainer">
+                        <div class="topic">
+                            <div>
+                                <img src="../assets/time.png" class="topicImg">
+                            </div>
+                            <h3 class="head">TIME SAVING</h3>
+
+                        </div>
+                        <div>
+                            <p class="topicText">Collect more bids in less time with online RFQs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="topicContainer">
+                        <div class="topic">
+                            <div>
+                                <img src="../assets/standardization.png" class="topicImg">
+                            </div>
+                            <h3 class="head">STANDARDIZATION</h3>
+
+                        </div>
+                        <div>
+                            <p class="topicText">Collect information, documents or bids from your suppliers
+                                with customized RFQ and forms.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="topicContainer">
+                        <div class="topic">
+                            <div>
+                                <img src="../assets/track.png" class="topicImg">
+                            </div>
+                            <h3 class="head">TRACKABILITY</h3>
+
+                        </div>
+                        <div>
+                            <p class="topicText">Track and report all transactions of buyers
+                                and suppliers using our detailed reporting tools.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- blog -->
+    <div class="blogDiv" id="blog">
+        <div class="blogContent">
+
+            <div class="blogOffer">
+                <div class="blogLine">
+                    <div class="bgline"></div>
+                    <h1>BLOG SECTION</h1>
+                    <p class="latest">Check out our latest updates here</p>
+                </div>
+                <div class="blogcont">
+                    <div class="blogContainer">
+                        <div class="blogTopic">
+                            <div>
+                                <img src="../assets/sale.png" class="blogImg">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="blogText">Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit.
+                                Quis nam id facilis, provident.
+                            </p>
+
+                            <a href="" class="readMore">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="blogContainer">
+                        <div class="blogTopic">
+                            <div>
+                                <img src="../assets/shake.png" class="blogImg">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="blogText">Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit.
+                                Quis nam id facilis, provident.
+                            </p>
+
+                            <a href="" class="readMore">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="blogContainer">
+                        <div class="blogTopic">
+                            <div>
+                                <img src="../assets/graph.png" class="blogImg">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="blogText">Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit.
+                                Quis nam id facilis, provident.
+                            </p>
+
+                            <a href="" class="readMore">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- customers -->
+    <div class="feedDiv">
+        <div class="feedContent">
+
+            <div class="feedOffer">
+                <div class="feedLine">
+                    <div class="line"></div>
+                    <h1>WHAT OUR CUSTOMERS ARE SAYING</h1>
+                </div>
+                <div class="feedcont">
+                    <div class="feedContainer">
+                        <div class="feedTopic">
+                            <div>
+                                <img src="../assets/quote.png" class="feedImg">
+                            </div>
+                            <h3 class="niceSupport">Nice Support!!!</h3>
+                            <p class="feedText">No doubt, Vatebra e-procurement software
+                                solution has been a real-time business integrator.
+                                The system has helped us to cut down of waste and saves
+                                time from excess paper works.
+                            </p>
+                        </div>
+
+                        <div class="guy">
+                            <img src="../assets/guy.png" class="guyPng">
+                            <div class="sam">
+                                <h3>Oluwanisola Samuel</h3>
+                                <p>Engineer</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="feedContainer">
+                        <div class="feedTopic">
+                            <div>
+                                <img src="../assets/quote.png" class="feedImg">
+                            </div>
+                            <h3 class="niceSupport">Excellent Product!!</h3>
+                            <p class="feedText">No doubt, Vatebra e-procurement software
+                                solution has been a real-time business integrator.
+                                The system has helped us to cut down of waste and saves
+                                time from excess paper works.
+                            </p>
+                        </div>
+
+                        <div class="guy">
+                            <img src="../assets/guy2.png" class="guyPng">
+                            <div class="sam">
+                                <h3>Abimbola Daniel</h3>
+                                <p>Software Developer</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer" id="contact">
+        <div class="contactUs">
+            <h1 class="contact">Contact Us</h1>
+        </div>
+        <div class="locations">
+            <div class="lagos">
+                <h1 class="lagosOffice">Lagos Office</h1>
+                <p class="add1">Plot 1187, Abimbola Awoniyi Close,<br />
+                    off Kasumu Ekemode Str, Via Saka <br />
+                    Tinubu Street, Victoria island, <br /> Nigeria.
+                </p>
+                <div class="tee">
+                    <p class="telephone">T: 234-1-9049320, 234-1-2710670-2</p>
+                    <p>E: info@vatebra.com</p>
+                    <p>E: customersupport@vatebra.com</p>
+                </div>
+            </div>
+            <div class="abuja">
+                <h1 class="abujaOffice">Abuja Office</h1>
+                <p class="add2">Suite 302 Fortune Place, <br />
+                    No 9 Nairobi Street, off <br />
+                    Aminu Kano Cresent, <br />
+                    Wuse 2, Abuja, Nigeria.
+                </p>
+                <div class="tee1">
+                    <p>T: 234-1-9049320, 234-1-2710670-2</p>
+                    <p>E: abujaoffice@vatebra.com</p>
+                </div>
+            </div>
+            <div class="nairobi">
+                <h1 class="nairobiOffice">Nairobi Office</h1>
+                <p class="add3">AG02, Madonna House,
+                    <br /> Westlands Road, Nairobi, <br /> Kenya
+                </p>
+                <p class="tee2">E: nairobioffice@vatebra.com</p>
+            </div>
+            <div class="ghana">
+                <h1 class="ghanaOffice">Accra Office</h1>
+                <p class="add5">202, Westland Boulevard,
+                    <br /> west Legon, Accra, Ghana,
+                    <br /> PO Box AN 5208 Accra- <br />
+                    North, Accra Ghana.
+                </p>
+                <div class="tee5">
+                    <p>T: 233(0) 302402339</p>
+                    <p>E: ghanaoffice@vatebra.com</p>
+                </div>
+
+            </div>
+
+            <div class="sierraLeone">
+                <h1 class="sierraLeoneOffice">Sierra Leone Office</h1>
+                <div class="tee4">
+                    <p>55A Wilkinson Road, Freetown, Sierra Leone</p>
+                    <p>T: +2349062547274</p>
+                    <p>E: info@vatebra.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="copy">
+                <img src="../assets/copyright.png">
+                <p class="copyrightText">Copyright 2022 by Vatebra.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
